@@ -1,1 +1,16 @@
-/home/darren/.config/Code/User/keybindings.json
+// Place your key bindings in this file to override the defaults
+[
+    { "key": "win+alt+l", "command": "turboConsoleLog.displayLogMessage" },
+    {
+    "key": "ctrl+n", 
+    "command": "workbench.action.quickOpenSelectNext", "when": "inQuickOpen" 
+    }, 
+    { 
+    "key": "ctrl+p", 
+    "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" 
+    },
+    {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
+    },
+]

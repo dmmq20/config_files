@@ -1,1 +1,80 @@
-/home/darren/.config/Code/User/settings.json
+{
+  // "editor.fontFamily": "'Fira Code Medium', monospace",
+  "editor.fontFamily": "'Victor Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "terminal.integrated.fontFamily": "Fira Code Medium",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "vim.commandLineModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.leader": "<Space>",
+  "vim.easymotion": true,
+  "vim.handleKeys": {
+    "<C-w>": false
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.vimrc.enable": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.sideBar.location": "right",
+  "editor.stickyScroll.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.location": "top",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.quickSuggestions": {
+    "other": "inline",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.glyphMargin": false,
+  // "editor.folding": false,
+  "editor.mouseWheelScrollSensitivity": 3,
+  "vim.scroll": 10
+}
