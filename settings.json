@@ -1,11 +1,14 @@
 {
-  // "editor.fontFamily": "'Fira Code Medium', monospace",
-  "editor.fontFamily": "'Victor Mono', monospace",
+  "editor.fontFamily": "'Fira Code Medium', monospace",
+  // "editor.fontFamily": "'Victor Mono', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 20,
   "terminal.integrated.fontFamily": "Fira Code Medium",
+  // "terminal.integrated.fontFamily": "'Victor Mono",
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.colorTheme": "GitHub Dark High Contrast",
+  "vim.foldfix": true,
   "vim.commandLineModeKeyBindings": [],
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<S-h>"], "commands": [":bprevious"] },
@@ -23,12 +26,12 @@
       "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
+    { "before": ["leader", "S"], "commands": [":split"] },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
     },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] }
   ],
   "vim.insertModeKeyBindings": [
     {
@@ -44,20 +47,23 @@
   "editor.lineNumbers": "relative",
   "workbench.iconTheme": "vscode-icons",
   "editor.formatOnSave": true,
+  "vsicons.dontShowNewVersionMessage": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vsicons.dontShowNewVersionMessage": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vim.vimrc.enable": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "vim.vimrc.enable": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
@@ -73,8 +79,11 @@
     "comments": "off",
     "strings": "off"
   },
-  "editor.glyphMargin": false,
+  // "editor.glyphMargin": false,
   // "editor.folding": false,
   "editor.mouseWheelScrollSensitivity": 3,
-  "vim.scroll": 10
+  "vim.scroll": 10,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
